@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top right, #a5adb6, #1a2a6c, #676b70, #1a2a6c, #a5adb6);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+    max-width: 80%;
+}
+
+p {
+    padding: 1rem;
+}

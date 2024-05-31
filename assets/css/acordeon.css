@@ -1,0 +1,129 @@
+.acordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: 1s;
+}
+
+.acordeon:hover {
+    background-color: #55569ea8;
+    border-color: #55569ea8;
+}
+
+.acordeon__button {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.acordeon__button button {
+    color: white;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.acordeon__button img {
+    height: 20px;
+}
+
+.acordeon__button img:hover {
+    transform: rotate(360deg);
+    transition: transform 0.7s ease-in-out;
+}
+
+.acordeon__skills {
+    display: none;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.acordeon__title {
+    top: 0;
+    padding: 5px;
+    margin: 20px;
+}
+
+.acordeon__ferramentas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acordeon__image img {
+    height: 40px;
+    width: 40px;
+    margin: 8px;
+}
+
+.acordeon__pessoal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acordeon__ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 5px;
+}
+
+.acordeon__ul li {
+    text-align: center;
+    width: 150px;
+    margin-bottom: 8px;
+    list-style: none;
+    position: relative;
+}
+
+.acordeon__ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: black;
+    font-size: 1em;
+}
+
+@media (max-width: 720px) {
+    .acordeon__skills {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .acordeon__title {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .acordeon__image img {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+
+    .acordeon__ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .acordeon__ul li {
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 8px;
+        margin: 8px;
+    }
+}
