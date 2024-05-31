@@ -45,7 +45,7 @@
     width: 24px;
     height: 24px;
     margin-right: 8px;
-    background-image: url('..icons/whats.svg');
+    background-image: url('../icons/whats.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -56,7 +56,7 @@
     width: 24px;
     height: 24px;
     margin-right: 8px;
-    background-image: url('..icons/email.svg');
+    background-image: url('../icons/email.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
